@@ -1,8 +1,9 @@
 ## Motivação
 
 Código para uma simples página para ser enviada caso alguém tente te aplicar algum golpe que envolva envio de dinheiro.
-Você envia o link da pagina como se fosse o comprovante e extrai a localização do golpista
-ideia do https://github.com/PedroHBessa/backscan
+Você envia o link da página como se fosse o comprovante e extrai a localização do golpista.
+
+A idéia partiu do https://github.com/PedroHBessa/backscan
 
 Só precisa fazer o deploy no vercel e adicionar suas variáveis de ambiente dos dados do bot do telegram
 
@@ -28,7 +29,8 @@ Só precisa fazer o deploy no vercel e adicionar suas variáveis de ambiente dos
 
 ## Dados para as variáveis de ambiente
 
-TELEGRAM_BOT_TOKEN = seuTELEGRAM_BOT_TOKEN;
+TELEGRAM_BOT_TOKEN = seu TELEGRAM_BOT_TOKEN;
+
 TELEGRAM_CHAT_ID = seu TELEGRAM_CHAT_ID;
 
 ambos obtidos no passo a passo anterior
