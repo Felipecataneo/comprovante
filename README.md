@@ -1,8 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Motivação
 
-## Getting Started
+Código para uma simples página para ser enviada caso alguém tente te aplicar algum golpe que envolva envio de dinheiro.
+Você envia o link da pagina como se fosse o comprovante e extrai a localização do golpista
+ideia do https://github.com/PedroHBessa/backscan
 
-First, run the development server:
+Só precisa fazer o deploy no vercel e adicionar suas variáveis de ambiente dos dados do bot do telegram
+
+
+##  Criar e Configurar um Bot no Telegram
+
+1. No Telegram, procure por **@BotFather**.
+2. Envie o comando:
+   ```
+   /newbot
+   ```
+3. Siga as instruções e anote o **token** fornecido.
+4. Para obter o **ID do chat/grupo**:
+   - Adicione o bot ao grupo.
+   - Envie uma mensagem no grupo.
+   - Acesse:
+     ```
+     https://api.telegram.org/botSEU_BOT_TOKEN/getUpdates
+     ```
+   - Anote o `chat_id`.
+
+---
+
+## Dados para as variáveis de ambiente
+
+TELEGRAM_BOT_TOKEN = seuTELEGRAM_BOT_TOKEN;
+TELEGRAM_CHAT_ID = seu TELEGRAM_CHAT_ID;
+
+ambos obtidos no passo a passo anterior
+
+## testar localmente
+
+Servidor de desenvolvimento.
 
 ```bash
 npm run dev
@@ -14,20 +47,9 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) 
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 
