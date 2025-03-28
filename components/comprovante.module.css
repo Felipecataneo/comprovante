@@ -1,0 +1,81 @@
+/* components/Comprovante.module.css */
+
+/* Camada de overlay embaçada */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Para compatibilidade com Safari */
+    z-index: 10;
+  }
+  
+  /* Container do documento (comprovante) */
+  .document {
+    position: relative; /* Garante que o z-index funcione */
+    width: 90%;
+    max-width: 500px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    z-index: 5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding-bottom: 20px; /* Mantido do original */
+    /* Margin pode ser desnecessária se o body já centraliza */
+  }
+  
+  /* Cabeçalho do documento */
+  .header {
+    background-color: #FF7A00;
+    color: #fff;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .header span {
+    display: block;
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: normal;
+  }
+  
+  /* Seção do conteúdo */
+  .content {
+    padding: 20px;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  /* Títulos das seções */
+  .sectionTitle { /* Renomeado para camelCase, comum em JS */
+    font-weight: bold;
+    margin: 15px 0 5px;
+    color: #333;
+    font-size: 15px;
+  }
+  
+  /* Linhas de informação */
+  .infoLine { /* Renomeado */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  
+  .infoLabel { /* Renomeado */
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .infoValue { /* Renomeado */
+    text-align: right;
+    color: #333;
+    max-width: 60%;
+    word-wrap: break-word;
+  }
