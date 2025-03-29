@@ -46,7 +46,7 @@ export async function POST(request) {
   const connectionDownlink = connection.downlink || 'N/A';
 
   const message = `
-  Dados do usuário (Next.js):
+  Dados do usuário:
   - Localização: ${latitude}, ${longitude}
   - IP: ${ip}
   - Navegador/SO: ${userAgent}
