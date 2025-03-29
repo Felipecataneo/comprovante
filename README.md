@@ -1,7 +1,7 @@
 ## Motivação
 
 Código para uma simples página para ser enviada caso alguém tente te aplicar algum golpe que envolva envio de dinheiro.
-Você envia o link da página como se fosse o comprovante e extrai a localização do golpista.
+Você envia o link da página como se fosse o comprovante e extrai a localização e imagem do golpista.
 
 A idéia partiu do https://github.com/PedroHBessa/backscan
 
